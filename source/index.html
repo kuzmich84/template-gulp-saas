@@ -43,7 +43,7 @@
           <p class="intro__slogan">
             Взгляните на жизнь<br> иначе!
           </p>
-          <button class="button button__intro">
+          <button class="button intro__button" type="button">
             Скачать приложение
           </button>
           <ul class="intro__list">
@@ -94,7 +94,7 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper">
+        <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
@@ -124,8 +124,8 @@
                 </p>
               </div>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__arrows reviews__arrows--prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__arrows reviews__arrows--next" type="button">Следующий отзыв</button>
           </div>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
@@ -147,21 +147,21 @@
             </tr>
             <tr>
               <td>Розовый фильтр</td>
-              <td><img src="img/yes.png" width="31" height="21" alt="yes"></td>
-              <td><img src="img/yes.png" width="31" height="21" alt="yes"></td>
-              <td><img src="img/yes.png" width="31" height="21" alt="yes"></td>
+              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
+              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
+              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
             </tr>
             <tr>
               <td>Смайлики</td>
-              <td><img src="img/no.png" width="27" height="27" alt="no"></td>
-              <td><img src="img/yes.png" width="31" height="21" alt="yes"></td>
-              <td><img src="img/yes.png" width="31" height="21" alt="yes"></td>
+              <td><img src="img/no.png" width="27" height="27" alt="Нет"></td>
+              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
+              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
             </tr>
             <tr>
               <td>Комментарии</td>
-              <td><img src="img/no.png" width="27" height="27" alt="no"></td>
-              <td><img src="img/no.png" width="27" height="27" alt="no"></td>
-              <td><img src="img/yes.png" width="31" height="21" alt="yes"></td>
+              <td><img src="img/no.png" width="27" height="27" alt="Нет"></td>
+              <td><img src="img/no.png" width="27" height="27" alt="Нет"></td>
+              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
             </tr>
           </table>
         </div>
@@ -224,9 +224,9 @@
               </li>
             </ul>
           </div>
-          <div class="main-footer__copyright copyright">
+          <div class="main-footer__copyright">
             Разработано:
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>
       </footer>
