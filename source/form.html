@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="logo">
+        <img src="img/logotype-phone.png" width="74" height="23" alt="Логотип Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">
+                  Фотографии
+                </a>
+              <li class="site-list__item">
+                <a href="#">
+                  Конкурс
+                </a>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru">
+                  Html Academy
+                </a>
+            </ul>
+          </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Поделись историей своего путешествия</h1>
+      <section class="form">
+        <div class="form__wrapper">
+          <h2 class="visually-hidden">Форма заявки для участия в конкурсе</h2>
+          <p class="form__title">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </p>
+          <p class="form__slogan-prize">
+            Поделитесь своей историей и получите
+            шанс выиграть ценный приз — 1000
+            миль на вашу бонусную карту!
+          </p>
+          <form class="form__request" method="get" action="https://echo.htmlacademy.ru">
+            <ul class="form__user-list">
+              <li class="form__user-item">
+                <label for="form-surname">ФАМИЛИЯ:</label>
+                <input type="text" id="form-surname" name="surname" placeholder="Укажите фамилию *">
+              </li>
+              <li class="form__user-item">
+                <label for="form-name">ИМЯ:</label>
+                <input type="text" id="form-name" name="name" placeholder="Введите ваше имя *">
+              </li>
+              <li class="form__user-item">
+                <label for="form-patronymic">ОТЧЕСТВО:</label>
+                <input type="text" id="form-patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+            <p class="form__slogan">
+              Ваши безбашенные
+              достижения в путешествии
+            </p>
+            <ul class="form__achievements-list">
+              <li class="form__achievements-item">
+                <input class="visually-hidden form__achievements-checkbox" type="checkbox" name="selfy" id="form-selfy" checked>
+                <label for="form-selfy">Сделал селфи с акулой</label>
+              </li>
+              <li class="form__achievements-item">
+                <input class="visually-hidden form__achievements-checkbox" type="checkbox" name="sunburn" id="form-sunburn" checked>
+                <label for="form-sunburn">Обгорел на пляже</label>
+              </li>
+              <li class="form__achievements-item">
+                <input class="visually-hidden form__achievements-checkbox" type="checkbox" name="Chuck-Norris" id="form-Chuck-Norris">
+                <label for="form-Chuck-Norris">Видел Чака Норриса</label>
+              </li>
+              <li class="form__achievements-item">
+                <input class="visually-hidden form__achievements-checkbox" type="checkbox" name="souvenir" id="form-souvenir">
+                <label for="form-souvenir">Накупил сувениров</label>
+              </li>
+              <li class="form__achievements-item">
+                <input class="visually-hidden form__achievements-checkbox" type="checkbox" name="tower" id="form-tower" checked>
+                <label for="form-tower">Удержал башню</label>
+              </li>
+              <li class="form__achievements-item">
+                <input class="visually-hidden form__achievements-checkbox" type="checkbox" name="hotel" id="form-hotel">
+                <label for="form-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+            <ul class="form__user-list">
+              <li class="form__user-item">
+                <label for="form-number">НОМЕР ТЕЛЕФОНА</label>
+                <input type="tel" id="form-number" name="number" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="form__user-item">
+                <label for="form-email">АДРЕС ПОЧТЫ</label>
+                <input type="email" id="form-email" name="email" placeholder="Введите почту *">
+              </li>
+            </ul>
+            <p class="form__slogan">
+              С каким приложением
+              путешествовали?
+            </p>
+            <ul class="form__application-list">
+              <li class="form__application-item">
+                <label>
+                  <input class="visually-hidden form__appication-radio" type="radio" name="application" value="Pink для iOS" checked>Pink для iOS
+                </label>
+              </li>
+              <li class="form__application-item">
+                <label>
+                  <input class="visually-hidden form__appication-radio" type="radio" name="application" value="Pink на Android">Pink на Android
+                </label>
+              <li class="form__application-item">
+                <label>
+                  <input class="visually-hidden form__appication-radio" type="radio" name="application" value="Windows Phone">Windows Phone
+                </label>
+              </li>
+            </ul>
+            <p class="form__comment">
+              Опишите свои эмоции
+            </p>
+            <textarea name="comment" id="form-comment" rows="10">
+              Можно прям в красках, не стесняясь в выражениях
+            </textarea>
+            <button class="button form__button" type="submit">Отправить форму</button>
+            <p class="form__required-field">
+              * — обязательные поля
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <ul class="main-footer__logos">
+          <li class="main-footer__logo">
+            <a class="main-footer__logo-glasses">
+              <img src="img/logotype-glasses.png" width="59" height="40" alt="Логотип Очки">
+            </a>
+          </li>
+          <li class="main-footer__logo">
+            <a class="main-footer__logo">
+              <img src="img/logotype-phone.png" width="74" height="23" alt="Логотип Pink">
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright">
+          Разработано:
+          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--универсальное диалоговое окно, содержимое будет меняться скриптом-->
+    <div class="dialog__wrapper">
+      <div class="dialog__window">
+        <p class="dialog__title">
+          Что-то пошло не так!
+        </p>
+        <p class="dialog__content">
+          Проверьте поля, выделенные красным,
+          скорее всего вы забыли их заполнить
+        </p>
+        <button class="button dialog__button" type="button">ОК</button>
+      </div>
+    </div>
+  </body>
+</html>
