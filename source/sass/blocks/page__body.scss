@@ -1,0 +1,44 @@
+.page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  position: relative;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--basic-dark);
+}
+
+.main-background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 320px;
+  height: 462px;
+  background-color: var(--basic-dark);
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.content-background {
+  position: absolute;
+  width: 320px;
+  height: 828px;
+  top: 907px;
+  z-index: -1;
+  background-image: url("../img/greybackground.jpg");
+  background-repeat: no-repeat;
+}
+
+.price-background {
+  position: absolute;
+  width: 320px;
+  height: 506px;
+  top: 2053px;
+  z-index: -1;
+  background-image: url("../img/greybackground-small.jpg");
+  background-repeat: no-repeat;
+}

@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="logo">
-        <img src="img/logotype-phone.png" width="74" height="23" alt="Логотип Pink">
+        <img src="img/logotype-pink.png" width="74" height="23" alt="Логотип Pink">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -22,18 +25,23 @@
               <a href="catalog.html">
                 Фотографии
               </a>
+            </li>
             <li class="site-list__item">
               <a href="#">
                 Конкурс
               </a>
+            </li>
             <li class="site-list__item">
               <a href="#">
                 Html Academy
               </a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
+
+    <div class="main-background"></div>
 
     <main class="main-container">
       <h1 class="visually-hidden">PINK - раскрась свою жизнь новыми красками!</h1>
@@ -43,48 +51,54 @@
           <p class="intro__slogan">
             Взгляните на жизнь<br> иначе!
           </p>
-          <button class="button intro__button" type="button">
-            Скачать приложение
-          </button>
-          <ul class="intro__list">
-            <li class="intro__item">
-              <a class="intro__link intro__link--apple-logo" href="https://apple.com">Логотип Apple</a>
-            </li>
-            <li class="intro__item">
-              <a class="intro__link intro__link--android-logo" href="http://android.com">Логотип Android"</a>
-            </li>
-            <li class="intro__item">
-              <a class="intro__link intro__link--microsoft-logo" href="http://microsoft.com">Логотип Microsoft"</a>
-            </li>
-          </ul>
-          <p class="intro__access">
-            Доступно для iPhone, iPad, Android,<br>
-            Windows Phone, OS X, Windows 8
-          </p>
+          <div class="intro__background">
+            <img src="img/phone.png" width="320" height="286" alt="Загрузи приложение в свой смартфон">
+          </div>
+          <div class="intro__wrapper-download">
+            <button class="button intro__button" type="button">
+              Скачать приложение
+            </button>
+            <ul class="intro__list">
+              <li class="intro__item">
+                <a class="intro__link intro__link--apple-logo" href="https://apple.com">Логотип Apple</a>
+              </li>
+              <li class="intro__item">
+                <a class="intro__link intro__link--android-logo" href="http://android.com">Логотип Android</a>
+              </li>
+              <li class="intro__item">
+                <a class="intro__link intro__link--microsoft-logo" href="http://microsoft.com">Логотип Microsoft</a>
+              </li>
+            </ul>
+            <p class="intro__access">
+              Доступно для iPhone, iPad, Android,<br>
+              Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </section>
+
+      <div class="content-background"></div>
 
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <p class="advantages__slogan">
-              Устали от серости мегаполиса?<br>
-              Нам есть, что вам
-              предложить!
+            Устали от серости мегаполиса?<br><br>
+            Нам есть, что вам предложить!
           </p>
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--iphone1">
+            <li class="advantages__item advantages__item--iphone">
               <h3 class="advantages__item-header">Поднимает настроение</h3>
               <p class="advantages__item-content">
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
             </li>
-            <li class="advantages__item advantages__item--iphone2">
+            <li class="advantages__item advantages__item--iphone-pink">
               <h3 class="advantages__item-header">Меняет мир вокруг</h3>
               <p class="advantages__item-content">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="advantages__item advantages__item--iphone3">
+            <li class="advantages__item advantages__item--iphone-pink-smile">
               <h3 class="advantages__item-header">Заводит новых друзей</h3>
               <p class="advantages__item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
                 и заводите новых</p>
@@ -135,35 +149,42 @@
         </div>
       </section>
 
+      <div class="price-background"></div>
+
       <section class="price-list">
         <div class="price-list__wrapper">
           <h2 class="visually-hidden">Наши цены</h2>
           <table class="price-list__table">
             <tr>
-              <th></th>
+              <th class="price-list__table-title price-list__table-title--empty"></th>
               <th class="price-list__table-title">База<br><span>1,99 USD</span></th>
               <th class="price-list__table-title price-list__table-title--hit">СТАНДАРТ<br><span>3,99 USD</span></th>
               <th class="price-list__table-title">АНЛИМ<br><span>9,99 USD</span></th>
             </tr>
             <tr>
-              <td>Розовый фильтр</td>
-              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
-              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
-              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
+              <td class="price-list__table-data">Розовый фильтр</td>
+              <td>Розовый фильтр<img src="img/yes.png" width="31" height="21" alt="Да"></td>
+              <td>Розовый фильтр<img src="img/yes.png" width="31" height="21" alt="Да"></td>
+              <td>Розовый фильтр<img src="img/yes.png" width="31" height="21" alt="Да"></td>
             </tr>
             <tr>
-              <td>Смайлики</td>
-              <td><img src="img/no.png" width="27" height="27" alt="Нет"></td>
-              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
-              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
+              <td class="price-list__table-data">Смайлики</td>
+              <td>Смайлики<img src="img/no.png" width="27" height="27" alt="Нет"></td>
+              <td>Смайлики<img src="img/yes.png" width="31" height="21" alt="Да"></td>
+              <td>Смайлики<img src="img/yes.png" width="31" height="21" alt="Да"></td>
             </tr>
             <tr>
-              <td>Комментарии</td>
-              <td><img src="img/no.png" width="27" height="27" alt="Нет"></td>
-              <td><img src="img/no.png" width="27" height="27" alt="Нет"></td>
-              <td><img src="img/yes.png" width="31" height="21" alt="Да"></td>
+              <td class="price-list__table-data">Комментарии</td>
+              <td>Комментарии<img src="img/no.png" width="27" height="27" alt="Нет"></td>
+              <td>Комментарии<img src="img/no.png" width="27" height="27" alt="Нет"></td>
+              <td>Комментарии<img src="img/yes.png" width="31" height="21" alt="Да"></td>
             </tr>
           </table>
+          <p class="price-list__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--current" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
         </div>
       </section>
 
@@ -185,14 +206,17 @@
             <p class="contacts__address">
               Приезжайте в гости:<br>
               <span class="contacts__post-address"> ул. Большая<br>
-              Конюшенная, 19/8</span>
+                Конюшенная, 19/8</span>
             </p>
           </div>
         </div>
       </section>
 
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461607064!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0x47a3f2ae8d090ca3!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCA40YHQsNC90LrRgiwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1649069695157!5m2!1sru!2sru" width="320" height="200" style="border: 0;" allowfullscreen></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461607064!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0x47a3f2ae8d090ca3!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCA40YHQsNC90LrRgiwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1649069695157!5m2!1sru!2sru"
+          width="320" height="200" style="border: 0;" allowfullscreen>
+        </iframe>
         <span class="visually-hidden">Интерактивная карта Санкт-Петербурга</span>
       </div>
     </main>
@@ -206,8 +230,8 @@
             </a>
           </li>
           <li class="main-footer__logo">
-            <a class="main-footer__logo">
-              <img src="img/logotype-phone.png" width="74" height="23" alt="Логотип Pink">
+            <a class="main-footer__logo-pink">
+              <img src="img/logotype-pink-footer.png" width="74" height="23" alt="Логотип Pink">
             </a>
           </li>
         </ul>
@@ -220,7 +244,8 @@
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+                Ютубе</a>
             </li>
           </ul>
         </div>

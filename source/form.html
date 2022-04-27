@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="logo">
-        <img src="img/logotype-phone.png" width="74" height="23" alt="Логотип Pink">
+        <img src="img/logotype-pink.png" width="74" height="23" alt="Логотип Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -34,6 +35,8 @@
           </div>
       </nav>
     </header>
+
+    <div class="main-background"></div>
 
     <main class="main-container">
       <h1 class="visually-hidden">Поделись историей своего путешествия</h1>
@@ -127,15 +130,13 @@
               </ul>
             </fieldset>
             <fieldset class="form__comment">
-              <legend class="form__slogan">
+              <legend class="form__slogan slogan-comment">
                 Опишите свои эмоции
               </legend>
-              <textarea name="comment" id="form-comment" rows="10">
-                Можно прям в красках, не стесняясь в выражениях
-              </textarea>
+              <textarea class="form__comment-emotions" name="comment" id="form-comment" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
               <button class="button form__button" type="submit">Отправить форму</button>
               <p class="form__required-field">
-                * — обязательные поля
+                <span class="form__required-field-decor">*</span> — обязательные поля
               </p>
             </fieldset>
           </form>
@@ -152,8 +153,8 @@
             </a>
           </li>
           <li class="main-footer__logo">
-            <a class="main-footer__logo">
-              <img src="img/logotype-phone.png" width="74" height="23" alt="Логотип Pink">
+            <a class="main-footer__logo-pink">
+              <img src="img/logotype-pink-footer.png" width="74" height="23" alt="Логотип Pink">
             </a>
           </li>
         </ul>
