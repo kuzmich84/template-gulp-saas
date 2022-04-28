@@ -1,0 +1,41 @@
+.contacts__wrapper {
+  width: 100%;
+  padding: 43px 20px 19px;
+  background-color: var(--basic-white);
+}
+
+.contacts__slogan {
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 0;
+}
+
+.contacts__information {
+  margin-top: 34px;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__address {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contacts__number,
+.contacts__email-address,
+.contacts__post-address {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--basic-red);
+
+  &:hover {
+    color: var(--basic-dark);
+  }
+
+  &:active {
+    color: var(--basic-dark);
+    opacity: 0.3;
+  }
+}

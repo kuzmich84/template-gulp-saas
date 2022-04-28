@@ -1,0 +1,31 @@
+.dialog__window {
+  width: 320px;
+  padding: 37px 20px 50px;
+  background-color: var(--basic-white);
+}
+
+.dialog__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.dialog__content {
+  margin: 25px 0 39px;
+}
+
+.dialog__button {
+  width: 100%;
+  border: 2px solid var(--basic-green);
+  border-radius: 1px;
+  color: var(--basic-white);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+  padding: 15px 0 14px;
+  margin-top: 2px;
+}

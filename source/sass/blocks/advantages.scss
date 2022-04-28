@@ -1,0 +1,45 @@
+.advantages__wrapper {
+  padding-top: 40px;
+  height: 1000px;
+}
+
+.advantages__slogan {
+  color: var(--basic-dark);
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+  padding-bottom: 70px;
+  margin: 0;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 45px 20px 0;
+  background-color: var(--basic-neutral);
+}
+
+.advantages__item-header {
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 11px;
+}
+
+.advantages__item-content {
+  color: var(--basic-dark);
+  font-weight: 400;
+  align-items: center;
+  margin: 0 0 31px;
+}
+
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item--iphone-pink-smile::after {
+  content: url("../img/iphone-pink-smile.jpg");
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 78px);
+  z-index: -1;
+}

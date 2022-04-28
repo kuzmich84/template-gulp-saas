@@ -1,0 +1,30 @@
+.main-footer__wrapper {
+  background-color: var(--basic-white);
+  width: 320px;
+  padding: 40px 20px 50px;
+}
+
+.main-footer__logos {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.main-footer__logo-pink {
+  padding-left: 12px;
+}
+
+.social__list {
+  display: flex;
+  padding: 0;
+  margin: 30px 70px 50px;
+}
+
+.main-footer__copyright {
+  margin: 38px 0 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
