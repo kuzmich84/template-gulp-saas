@@ -36,8 +36,6 @@
       </nav>
     </header>
 
-    <div class="main-background"></div>
-
     <main class="main-container">
       <h1 class="visually-hidden">Поделись историей своего путешествия</h1>
       <section class="publishing-a-story">
@@ -133,7 +131,9 @@
               <legend class="form__slogan slogan-comment">
                 Опишите свои эмоции
               </legend>
-              <textarea class="form__comment-emotions" name="comment" id="form-comment" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <div class="form__comment-container">
+                <textarea class="form__comment-emotions" name="comment" id="form-comment" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+              </div>
               <button class="button form__button" type="submit">Отправить форму</button>
               <p class="form__required-field">
                 <span class="form__required-field-decor">*</span> — обязательные поля
@@ -179,8 +179,8 @@
     </footer>
 
     <!--универсальное диалоговое окно, содержимое будет меняться скриптом-->
-    <div class="dialog__wrapper">
-      <div class="dialog__window">
+    <div class="dialog__window">
+      <div class="dialog__wrapper">
         <p class="dialog__title">
           Что-то пошло не так!
         </p>
