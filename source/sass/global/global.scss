@@ -2,7 +2,6 @@
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -18,10 +17,6 @@ input[type="radio"].visually-hidden {
 
 .page a {
   text-decoration: none;
-}
-
-.page ul {
-  list-style: none;
 }
 
 img {

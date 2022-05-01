@@ -1,17 +1,15 @@
 .photo__wrapper {
-  background-color: var(--basic-white);
+  background-color: $basic-white;
 }
 
 .photo__list {
-  margin: 0;
-  padding: 0;
+  @include ul-reset;
 }
 
 .photo__item-content {
-  width: 280px;
   margin: 0 20px 20px;
   padding: 18px 10px 20px 17px;
-  background-color: var(--basic-neutral);
+  background-color: $basic-neutral;
   text-align: left;
 }
 
@@ -55,7 +53,7 @@
   margin: 10px 0 0;
   font-weight: 400;
   font-size: 12px;
-  color: var(--basic-red);
+  color: $basic-red;
   text-transform: uppercase;
 }
 

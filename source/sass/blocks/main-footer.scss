@@ -1,12 +1,11 @@
 .main-footer__wrapper {
-  background-color: var(--basic-white);
-  width: 320px;
+  background-color: $basic-white;
+  min-width: 320px;
   padding: 40px 20px 50px;
 }
 
 .main-footer__logos {
-  margin: 0;
-  padding: 0;
+  @include ul-reset;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -17,14 +16,13 @@
 }
 
 .social__list {
+  @include ul-reset;
   display: flex;
-  padding: 0;
   margin: 30px 70px 50px;
 }
 
 .main-footer__copyright {
   margin: 38px 0 40px;
   font-weight: 400;
-  font-size: 14px;
   line-height: 18px;
 }

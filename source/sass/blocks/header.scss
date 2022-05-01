@@ -1,21 +1,22 @@
 .header__wrapper {
+  background-color: $basic-extra-dark;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
   padding-top: 30px;
 }
 
 .header__title {
-  margin: 0;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
-  color: var(--basic-white);
+  margin: 65px 0 0;
+
+  @include font-settings(300, 24px, 33px);
+  color: $basic-white;
 }
 
 .header__content {
   margin: 76px 0 0;
   padding: 43px 35px 50px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: var(--basic-dark);
-  background-color: var(--basic-white);
+
+  @include font-settings(400, 14px, 30px);
+  background-color: $basic-white;
 }
