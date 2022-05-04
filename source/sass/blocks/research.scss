@@ -1,0 +1,45 @@
+.research {
+  display: none;
+  position: relative;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-neutral;
+  }
+}
+
+.research__wrapper {
+  width: 50%;
+  margin-left: auto;
+  text-align: left;
+  padding-top: 50px;
+}
+
+.research__title {
+  @include font-settings(700, 30px, 30px);
+  color: $basic-black;
+}
+
+.research__content {
+  font-weight: 400;
+  color: $basic-dark;
+}
+
+.research__link {
+  font-weight: 400;
+  color: $basic-red;
+}
+
+.research-timer {
+  position: relative;
+  left: 20px;
+  height: 276px;
+  width: 100%;
+  background-color: $basic-white;
+  background-image: url("../img/research-timer.svg");
+  background-repeat: no-repeat;
+}

@@ -1,6 +1,6 @@
 .price-list__wrapper {
   width: 100%;
-  height: 506px;
+  //height: 506px;
   padding-top: 82px;
   background-color: $basic-neutral;
   clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
@@ -12,6 +12,11 @@
   border-collapse: collapse;
   white-space: nowrap;
   transform: translateX(-276px + 20px);
+
+  @media (min-width: $tablet-width) {
+    transform: none;
+    margin-left: 20px;
+  }
 
   tr {
     display: flex;
@@ -31,6 +36,16 @@
     color: $basic-white;
     background-color: $basic-dark;
     border-left: 2px solid $basic-neutral;
+
+    @media (min-width: $tablet-width) {
+      min-width: 152px;
+      height: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 233px;
+      height: 94px;
+    }
   }
 
   td {
@@ -45,6 +60,16 @@
     color: $basic-dark;
     background-color: $basic-white;
     border: 2px solid $basic-grey;
+
+    @media (min-width: $tablet-width) {
+      min-width: 152px;
+      height: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 233px;
+      height: 59px;
+    }
   }
 }
 
@@ -52,6 +77,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    span {
+      display: none;
+      transform: none;
+    }
+  }
 }
 
 .price-list__table tr:nth-child(2) > td {
@@ -67,11 +99,21 @@
 
 tr .price-list__table-title--empty {
   background-color: $basic-neutral;
+  border-bottom: 2px solid $basic-grey;
 }
 
 .price-list__table-data,
 .price-list__table-title--empty {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    min-width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 234px;
+  }
 }
 
 .price-list__toggles {

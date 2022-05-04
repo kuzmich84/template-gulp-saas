@@ -12,12 +12,44 @@
 
 .contacts__information {
   margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts__phone,
 .contacts__email,
 .contacts__address {
   @include font-settings(700, 18px, 25px);
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    flex-basis: 33%;
+  }
+}
+
+.contacts__address {
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 33%;
+    order: -1;
+  }
+}
+
+.contacts__phone {
+  @media (min-width: $desktop_width) {
+    order: -1;
+  }
 }
 
 .contacts__number,
@@ -25,6 +57,7 @@
 .contacts__post-address {
   @include font-settings(300, 24px, 33px);
   color: $basic-red;
+  text-decoration: none;
 
   &:hover {
     color: $basic-dark;
