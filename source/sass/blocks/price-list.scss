@@ -1,7 +1,6 @@
 .price-list__wrapper {
-  width: 100%;
-  height: 506px;
   padding-top: 82px;
+  margin: auto;
   background-color: $basic-neutral;
   clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
   box-sizing: border-box;
@@ -9,9 +8,22 @@
 }
 
 .price-list__table {
+  width: 100%;
+  table-layout: auto;
   border-collapse: collapse;
   white-space: nowrap;
-  transform: translateX(-276px + 20px);
+  transform: translateX(-277px + 20px);
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 40px);
+    transform: none;
+    margin: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 130px;
+    width: calc(100% - 260px);
+  }
 
   tr {
     display: flex;
@@ -19,7 +31,7 @@
   }
 
   th {
-    width: 277px;
+    min-width: 277px;
     height: 97px;
     box-sizing: border-box;
 
@@ -31,10 +43,22 @@
     color: $basic-white;
     background-color: $basic-dark;
     border-left: 2px solid $basic-neutral;
+
+    @media (min-width: $tablet-width) {
+      width: 25%;
+      min-width: 152px;
+      height: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 25%;
+      min-width: 233px;
+      height: 94px;
+    }
   }
 
   td {
-    width: 277px;
+    min-width: 277px;
     height: 59px;
     font-weight: 400;
     line-height: 30px;
@@ -45,6 +69,18 @@
     color: $basic-dark;
     background-color: $basic-white;
     border: 2px solid $basic-grey;
+
+    @media (min-width: $tablet-width) {
+      width: 25%;
+      min-width: 152px;
+      height: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 25%;
+      min-width: 233px;
+      height: 59px;
+    }
   }
 }
 
@@ -52,6 +88,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    span {
+      display: none;
+      transform: none;
+    }
+  }
 }
 
 .price-list__table tr:nth-child(2) > td {
@@ -67,11 +110,23 @@
 
 tr .price-list__table-title--empty {
   background-color: $basic-neutral;
+  border-bottom: 2px solid $basic-grey;
 }
 
 .price-list__table-data,
 .price-list__table-title--empty {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 25%;
+    min-width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+    min-width: 234px;
+  }
 }
 
 .price-list__toggles {

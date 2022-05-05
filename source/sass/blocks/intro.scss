@@ -5,6 +5,13 @@
   background-position: top center;
   z-index: 1;
   padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 110px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 127px 198px;
+  }
 }
 
 .intro__slogan {
@@ -19,6 +26,10 @@
   display: flex;
   justify-content: center;
   background: url("../img/screen.jpg") center 33px no-repeat;
+
+  @media (min-width: $tablet-width) {
+    height: 286px;
+  }
 }
 
 .intro__wrapper-download {
@@ -46,6 +57,10 @@
 
 .intro-item {
   height: 56px;
+}
+
+.intro__link {
+  text-decoration: none;
 }
 // TODO сделала заготовки для картинок. Закончу на следующем этапе
 /*.intro__link--apple-logo {
