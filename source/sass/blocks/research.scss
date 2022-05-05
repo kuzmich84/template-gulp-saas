@@ -1,6 +1,5 @@
 .research {
   display: none;
-  position: relative;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
@@ -35,11 +34,9 @@
 }
 
 .research-timer {
-  position: relative;
-  left: 20px;
-  height: 276px;
+  padding: 54px 0 100px;
   width: 100%;
-  background-color: $basic-white;
   background-image: url("../img/research-timer.svg");
   background-repeat: no-repeat;
+  background-position: 20px;
 }

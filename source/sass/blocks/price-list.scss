@@ -1,7 +1,6 @@
 .price-list__wrapper {
-  width: 100%;
-  //height: 506px;
   padding-top: 82px;
+  margin: auto;
   background-color: $basic-neutral;
   clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
   box-sizing: border-box;
@@ -9,13 +8,21 @@
 }
 
 .price-list__table {
+  width: 100%;
+  table-layout: auto;
   border-collapse: collapse;
   white-space: nowrap;
-  transform: translateX(-276px + 20px);
+  transform: translateX(-277px + 20px);
 
   @media (min-width: $tablet-width) {
+    width: calc(100% - 40px);
     transform: none;
-    margin-left: 20px;
+    margin: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 130px;
+    width: calc(100% - 260px);
   }
 
   tr {
@@ -24,7 +31,7 @@
   }
 
   th {
-    width: 277px;
+    min-width: 277px;
     height: 97px;
     box-sizing: border-box;
 
@@ -38,18 +45,20 @@
     border-left: 2px solid $basic-neutral;
 
     @media (min-width: $tablet-width) {
+      width: 25%;
       min-width: 152px;
       height: 75px;
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 233px;
+      width: 25%;
+      min-width: 233px;
       height: 94px;
     }
   }
 
   td {
-    width: 277px;
+    min-width: 277px;
     height: 59px;
     font-weight: 400;
     line-height: 30px;
@@ -62,12 +71,14 @@
     border: 2px solid $basic-grey;
 
     @media (min-width: $tablet-width) {
+      width: 25%;
       min-width: 152px;
       height: 45px;
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 233px;
+      width: 25%;
+      min-width: 233px;
       height: 59px;
     }
   }
@@ -108,11 +119,13 @@ tr .price-list__table-title--empty {
 
   @media (min-width: $tablet-width) {
     display: block;
+    width: 25%;
     min-width: 153px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 234px;
+    width: 25%;
+    min-width: 234px;
   }
 }
 
