@@ -95,18 +95,23 @@
                   <label for="form-hotel">Разгромил отель</label>
                 </li>
               </ul>
-              <ul class="form__user-list">
-                <li class="form__user-item">
+            </fieldset>
+
+            <fieldset class="form__user-contact">
+              <legend class="form__slogan form__slogan--disabled">
+                контактная информация
+              </legend>
+              <ul class="form__user-contact-list">
+                <li class="form__user-contact-item">
                   <label for="form-number">НОМЕР ТЕЛЕФОНА</label>
                   <input type="tel" id="form-number" name="number" placeholder="Номер, пожалуйста">
                 </li>
-                <li class="form__user-item">
+                <li class="form__user-contact-item">
                   <label for="form-email">АДРЕС ПОЧТЫ</label>
                   <input type="email" id="form-email" name="email" placeholder="Введите почту *">
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="form__application">
               <legend class="form__slogan">
                 С каким приложением путешествовали?
@@ -135,11 +140,15 @@
               <div class="form__comment-container">
                 <textarea class="form__comment-emotions" name="comment" id="form-comment" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
               </div>
-              <button class="button form__button" type="submit">Отправить форму</button>
-              <p class="form__required-field">
-                <span class="form__required-field-decor">*</span> — обязательные поля
-              </p>
             </fieldset>
+            <div class="form__footer">
+              <button class="button form__footer-button" type="submit">Отправить форму</button>
+              <p class="form__footer-required-field">
+                <span class="form__footer-required-field-decor">*</span> — обязательные
+                <span class="form__footer-required-field-disabled">&nbsp;для заполнения</span>
+                поля
+              </p>
+            </div>
           </form>
         </div>
       </section>
@@ -189,7 +198,9 @@
           Проверьте поля, выделенные красным,
           скорее всего вы забыли их заполнить
         </p>
-        <button class="button dialog__button" type="button">ОК</button>
+        <div class="button__action form__action--error">
+          <button class="button dialog__button" type="button">ОК</button>
+        </div>
       </div>
     </div>
   </body>
