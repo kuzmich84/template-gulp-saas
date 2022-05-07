@@ -11,12 +11,20 @@
   color: $basic-white;
   padding: 93px 20px 45px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 180px 20px 74px;
+  }
 }
 
 .publishing-a-story__slogan {
   background-color: $basic-white;
   font-weight: 400;
   line-height: 30px;
-  padding: 44px 20px 15px;
+  padding: 45px 20px 15px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 100px 85px 80px;
+  }
 }
