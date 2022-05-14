@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     height: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+  }
 }
 
 .advantages__wrapper-crop {
@@ -14,13 +18,41 @@
   padding-top: 40px;
   background-color: $basic-white;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+  @media (min-width: $tablet-width) {
+    height: 280px;
+  }
+}
+
+.advantages__intro {
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-settings(300, 40px, 54.47px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-settings(300, 50px, 68.09px);
+    margin-top: -60px;
+  }
 }
 
 .advantages__slogan {
   font-size: 24px;
   line-height: 28.8px;
-  padding-bottom: 70px;
-  margin: 0;
+  padding-bottom: 50px;
+  margin: 30px 0 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-settings(300, 40px, 54.47px);
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-settings(300, 50px, 68.09px);
+  }
 }
 
 .advantages__list {
@@ -29,14 +61,69 @@
   background-color: $basic-neutral;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     margin-left: auto;
     padding-bottom: 19px;
+    text-align: left;
+    margin-top: 33px;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     display: flex;
+    flex-direction: row;
+    align-self: center;
     width: 100%;
+    padding: 0 130px;
+    justify-content: space-around;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 550px;
+    width: 252px;
+    align-items: flex-end;
+    margin-top: -80px;
+    padding-right: 14px;
+  }
+}
+
+.advantages__item--iphone::before {
+  @media (min-width: $desktop-width) {
+    content: url("../img/iphone.png");
+    position: absolute;
+    left: calc(50% - 93px);
+    top: 8px;
+  }
+}
+
+.advantages__item--iphone-pink::before {
+  @media (min-width: $desktop-width) {
+    content: url("../img/iphone-pink.png");
+    position: absolute;
+    left: calc(50% - 93px);
+    top: 8px;
+  }
+}
+
+.advantages__item--iphone-pink-smile::before {
+  @media (min-width: $desktop-width) {
+    content: url("../img/iphone-pink-smile.png");
+    position: absolute;
+    left: calc(50% - 93px);
+    top: 8px;
   }
 }
 
@@ -45,16 +132,25 @@
   font-weight: 700;
   font-size: 18px;
   margin: 0 0 11px;
+
+  @media (min-width: $desktop-width) {
+    @include font-settings(700, 30px, 30px);
+    position: relative;
+    text-align: center;
+    top: 365px;
+  }
 }
 
 .advantages__item-content {
   font-weight: 400;
   margin: 0 0 31px;
-}
 
-.advantages__item {
-  position: relative;
-  padding: 0 20px;
+  @media (min-width: $desktop-width) {
+    @include font-settings(400, 18px, 30px);
+    position: relative;
+    text-align: center;
+    top: 380px;
+  }
 }
 
 .advantages__item--iphone-pink-smile::after {

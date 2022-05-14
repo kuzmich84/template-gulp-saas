@@ -1,5 +1,36 @@
 .map {
-  width: 100%;
-  height: auto;
+  position: relative;
   background-image: url("../img/map.jpg");
+
+  iframe {
+    width: 100%;
+    min-height: 200px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 374px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 502px;
+    }
+  }
+}
+
+.map::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background-color: $basic-white;
+  height: 33px;
+  left: 0;
+  top: -1px;
+  clip-path: polygon(100% 0, 50% 100%, 0 0);
+
+  @media (min-width: $tablet-width) {
+    height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 103px;
+  }
 }

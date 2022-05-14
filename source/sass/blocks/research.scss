@@ -16,27 +16,63 @@
   margin-left: auto;
   text-align: left;
   padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 130px;
+    width: 65%;
+  }
 }
 
 .research__title {
-  @include font-settings(700, 30px, 30px);
+  @include font-settings(700, 30px, 36px);
   color: $basic-black;
+  margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+    padding-top: 100px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .research__content {
   font-weight: 400;
   color: $basic-dark;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  padding-right: 25px;
+
+  @media (min-width: $desktop-width) {
+    @include font-settings(400, 18px, 30px);
+    margin-top: 23px;
+    margin-bottom: 30px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .research__link {
   font-weight: 400;
   color: $basic-red;
+
+  @media (min-width: $desktop-width) {
+    @include font-settings(400, 18px, 30px);
+  }
 }
 
 .research-timer {
-  padding: 54px 0 100px;
+  padding: 54px 0 111px 130px;
   width: 100%;
   background-image: url("../img/research-timer.svg");
   background-repeat: no-repeat;
-  background-position: 20px;
+  background-position: 130px 120px;
 }

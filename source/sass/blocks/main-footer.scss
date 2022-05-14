@@ -1,17 +1,21 @@
 .main-footer__wrapper {
   background-color: $basic-white;
   min-width: 320px;
-  padding: 40px 20px 50px;
+  padding: 0 20px 50px;
+  margin-top: 30px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 130px;
+    margin-top: 54px;
+    align-items: flex-start;
   }
 }
 
@@ -20,28 +24,94 @@
   display: flex;
   justify-content: center;
   align-items: end;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
 }
 
 .main-footer__logo-pink {
+  position: relative;
   padding-left: 12px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .social__list {
   @include ul-reset;
-  display: flex;
-  margin: 30px 70px 50px;
+  width: 180px;
+  display: grid;
+  grid-template-columns: repeat(3, 54px);
+  column-gap: 9px;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    margin-left: -15px;
+    margin-right: auto;
+  }
 }
 
 .social__link {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: $basic-dark;
+  }
+
+  &:active {
+    border-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &:active .social__link-img path {
+    fill: rgba($basic-red, 0.3);
+  }
 }
 
 .main-footer__copyright {
-  margin: 38px 0 40px;
-  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 39px;
   line-height: 18px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-top: 20px;
+  }
 }
 
 .main-footer__copyright-link {
+  width: 27px;
+  height: 34px;
   text-decoration: none;
+  margin-left: 10px;
+}
+
+.main-footer__academy-link {
+  margin-left: 15px;
+
+  &:hover .main-footer__academy-logo {
+    fill: $basic-dark;
+  }
+
+  &:active .main-footer__academy-logo {
+    fill: rgba($basic-dark, 0.3);
+  }
 }
