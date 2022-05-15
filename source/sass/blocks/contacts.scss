@@ -2,12 +2,27 @@
   width: 100%;
   padding: 43px 20px 19px;
   background-color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 20px 11px;
+  }
 }
 
 .contacts__slogan {
   font-size: 24px;
   line-height: 28.8px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54.47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68.09px;
+    padding-top: 16px;
+  }
 }
 
 .contacts__information {
@@ -17,6 +32,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+    margin-top: 22px;
   }
 }
 
@@ -35,18 +56,33 @@
   }
 }
 
+.contacts__email {
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+}
+
 .contacts__address {
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
+    margin-top: 28px;
+    margin-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
     flex-basis: 33%;
     order: -1;
+    margin-top: 18px;
   }
 }
 
 .contacts__phone {
+  @media (min-width: $tablet-width) {
+    margin-left: -5px;
+  }
+
   @media (min-width: $desktop_width) {
     order: -1;
   }
@@ -58,13 +94,17 @@
   @include font-settings(300, 24px, 33px);
   color: $basic-red;
   text-decoration: none;
+  padding-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 
   &:hover {
     color: $basic-dark;
   }
 
   &:active {
-    color: $basic-dark;
-    opacity: 0.3;
+    color: rgba(40, 54, 69, 0.3);
   }
 }

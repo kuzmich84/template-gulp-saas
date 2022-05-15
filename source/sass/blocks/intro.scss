@@ -8,18 +8,46 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 110px;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 127px 198px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+  }
+}
+
+.intro__wrapper-slogan {
+  @media (min-width: $tablet-width) {
+    width: 50%;
   }
 }
 
 .intro__slogan {
+  display: inline-block;
   color: $basic-white;
 
   @include font-settings(300, 24px, 28.8px);
   margin: 0;
   padding: 65px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 30%;
+
+    @include font-settings(300, 40px, 48px);
+    margin-left: 71px;
+    padding-top: 93px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-settings(300, 50px, 68px);
+    width: 30%;
+    margin-left: -15px;
+    padding-top: 99px;
+  }
 }
 
 .intro__background {
@@ -28,12 +56,27 @@
   background: url("../img/screen.jpg") center 33px no-repeat;
 
   @media (min-width: $tablet-width) {
-    height: 286px;
+    display: none;
   }
 }
 
 .intro__wrapper-download {
-  padding: 28px 20px 18px;
+  margin: 0 auto;
+  padding: 28px 0 18px;
+  width: calc(100% - 40px);
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-top: 30px;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    padding-left: 0;
+    padding-top: 37px;
+  }
 }
 
 .intro__button {
@@ -45,42 +88,88 @@
   border-radius: 29px;
   background-color: inherit;
   padding: 15px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+
+  &:hover {
+    color: $basic-red;
+    background-color: $basic-white;
+    box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    box-shadow: none;
+  }
 }
 
 .intro__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include ul-reset;
   min-height: 56px;
-  margin: 32px 38px 20px;
+  margin: 33px 20px 20px 39px;
+  display: grid;
+  grid-template-columns: repeat(3, 47px);
+  column-gap: 31.5px;
+  row-gap: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 50px 20px 20px 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 67px 0 40px -20px;
+  }
 }
 
 .intro-item {
+  width: 47px;
   height: 56px;
 }
 
 .intro__link {
-  text-decoration: none;
-}
-// TODO сделала заготовки для картинок. Закончу на следующем этапе
-/*.intro__link--apple-logo {
-  width: 47px;
-  height: 56px;
-  background: url("../img/apple-logo.png") no-repeat center;
-}
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 
-.intro__link--android-logo {
-  width: 43px;
-  height: 47px;
-  background: url("../img/android-logo.png") no-repeat center;
-}
+  &--apple-logo {
+    background-image: url("../img/apple-logo.svg");
+  }
 
-.intro__link--microsoft-logo {
-  width: 44px;
-  height: 41px;
-  background: url("../img/microsoft-logo.png") no-repeat center;
-}*/
+  &--android-logo {
+    background-image: url("../img/android-logo.svg");
+  }
+
+  &--microsoft-logo {
+    background-image: url("../img/microsoft-logo.svg");
+  }
+}
 
 .intro__access {
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    @include font-settings(300, 18px, 24px);
+    min-width: 300px;
+    margin: 0;
+    margin-bottom: 95px;
+    padding-top: 14px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 107px;
+  }
 }

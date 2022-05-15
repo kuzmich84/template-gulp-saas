@@ -11,6 +11,13 @@
 
   @include font-settings(300, 24px, 33px);
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68.09px;
+    padding-bottom: 52px;
+    margin: 145px 0 0;
+  }
 }
 
 .header__content {
@@ -19,4 +26,9 @@
 
   @include font-settings(400, 14px, 30px);
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 93px 35px 76px;
+  }
 }
