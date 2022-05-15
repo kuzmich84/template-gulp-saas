@@ -63,6 +63,8 @@
 }
 
 .contacts__address {
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
     margin-top: 28px;

@@ -3,6 +3,7 @@
   display: flex;
   align-items: end;
   padding-left: 20px;
+  cursor: pointer;
 
   &:hover path {
     fill: $basic-red;

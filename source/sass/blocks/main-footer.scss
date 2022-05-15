@@ -24,9 +24,24 @@
   display: flex;
   justify-content: center;
   align-items: end;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     padding-top: 10px;
+  }
+
+  &:hover .logo-pink path {
+    fill: $basic-red;
+  }
+
+  &:active .logo-pink path,
+  &:active .logo-pink-footer-star path {
+    fill: rgba($basic-dark, 0.3);
+  }
+
+  &:active .logo-image path,
+  &:active .logo-glasses path {
+    fill: rgba($basic-red, 0.3);
   }
 }
 
