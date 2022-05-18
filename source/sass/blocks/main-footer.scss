@@ -2,14 +2,13 @@
   background-color: $basic-white;
   min-width: 320px;
   padding: 0 20px 50px;
-  margin-top: 30px;
+  margin-top: 45px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -117,16 +116,20 @@
   height: 34px;
   text-decoration: none;
   margin-left: 10px;
-}
 
-.main-footer__academy-link {
-  margin-left: 15px;
-
-  &:hover .main-footer__academy-logo {
+  &:hover path {
     fill: $basic-dark;
   }
 
-  &:active .main-footer__academy-logo {
+  &:active path {
     fill: rgba($basic-dark, 0.3);
+  }
+}
+
+.main-footer__academy-logo {
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 }
