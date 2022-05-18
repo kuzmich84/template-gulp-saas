@@ -18,6 +18,10 @@
     padding-bottom: 52px;
     margin: 145px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 140px 0 0;
+  }
 }
 
 .header__content {
@@ -27,8 +31,24 @@
   @include font-settings(400, 14px, 30px);
   background-color: $basic-white;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding: 93px 35px 76px;
+    padding: 93px 130px 88px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+
+    br {
+      display: block;
+    }
   }
 }

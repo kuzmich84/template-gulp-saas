@@ -16,6 +16,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 300px);
+    row-gap: 52px;
+    margin: 0 130px;
   }
 }
 
@@ -29,6 +31,19 @@
 @media (min-width: $tablet-width) {
   .photo__item--panorama img {
     height: 509px;
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__item img {
+    height: 400px;
+    width: 300px;
+  }
+
+  .photo__item--panorama img {
+    height: 506px;
+    width: 1200px;
   }
 }
 
@@ -46,6 +61,10 @@
     min-width: 300px;
     margin: 0 20px;
     padding: 22px 24px 24px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 -2px;
   }
 }
 
@@ -73,6 +92,12 @@
       padding: 22px 25px 26px 30px;
       min-height: auto;
       margin-bottom: 30px;
+
+      @media (min-width: $desktop-width) {
+        padding: 22px 5px 26px 8px;
+        margin-bottom: 0;
+        width: 100%;
+      }
     }
 
     .photo__item-comment {

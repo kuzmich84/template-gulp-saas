@@ -1,5 +1,9 @@
 .upload__wrapper {
   background-color: $basic-neutral;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
 }
 
 .upload__slogan {
@@ -18,13 +22,15 @@
 .upload__container {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
+    grid-template-columns: 300px 1fr;
+    column-gap: 45px;
     padding: 57px 20px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 130px;
+    margin: 0 130px 30px;
+    background-color: $basic-neutral;
+    padding: 50px 20px 0 80px;
   }
 }
 
@@ -33,22 +39,28 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
   }
 }
 
 .upload__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   @include ul-reset;
   padding: 35px 0 34px;
-  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  border-bottom: 2px solid rgba(40, 54, 69, 0.1);
 
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: column;
-    padding: 0 0 34px;
+    align-items: center;
+    border-bottom: none;
+    padding: 0 0 120px;
   }
 }
 
@@ -56,35 +68,223 @@
   height: 86px;
 
   @media (min-width: $tablet-width) {
+    height: 72px;
+    width: 275px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgba($basic-dark, 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+  }
+
+  .button {
+    border: none;
+    background-color: transparent;
   }
 }
 
-.upload__range {
-  position: relative;
+.upload__item:last-child {
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
+}
 
-  margin-bottom: 32px;
+.upload__item--current {
+  @media (min-width: $tablet-width) {
+    height: 55px;
+  }
+}
+
+.upload__item-crop {
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.upload__item-crop-icon {
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.upload__item-fill-icon {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.upload__item-contrast-icon {
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.upload__item-fill {
+  path {
+    fill: rgba($basic-dark, 0.3);
+  }
+
+  &:hover path {
+    fill: rgba($basic-dark, 0.6);
+  }
+
+  @media (min-width: $tablet-width) {
+    path {
+      fill: $basic-red;
+    }
+
+    &:active path {
+      fill: $basic-red;
+    }
+  }
+}
+
+.upload__item-contrast {
+  margin-right: 35px;
+  margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 25px;
+  }
+
+  path {
+    fill: rgba($basic-dark, 0.3);
+  }
+
+  &:hover path {
+    fill: rgba($basic-dark, 0.6);
+  }
+
+  @media (min-width: $tablet-width) {
+    path {
+      fill: $basic-red;
+    }
+
+    &:active path {
+      fill: $basic-red;
+    }
+  }
 }
 
 .upload__range-scale {
   display: block;
   height: 2px;
-  min-width: 202px;
   background: $basic-dark;
+  min-width: 240px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 288px;
+  }
+}
+
+.upload__range {
+  display: none;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.upload__item--current .upload__range {
+  display: block;
+  position: relative;
+  top: 36px;
+}
+
+.upload__item--current .upload__range-scale {
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -43px;
+  }
+}
+
+.upload__item--current .upload__range-toggle {
+  display: block;
+  top: -5px;
+  left: 192px;
+
+  @media (min-width: $tablet-width) {
+    top: -49px;
+    left: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 240px;
+  }
 }
 
 .upload__range-toggle {
+  display: none;
   position: absolute;
-  top: 0;
-
   width: 14px;
   height: 14px;
-
   background: $basic-white;
   border: 2px solid $basic-red;
   border-radius: 50%;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    &--fill {
+      top: -5px;
+      left: 25px;
+    }
+
+    &--contrast {
+      top: -5px;
+      left: 100px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--fill {
+      left: 40px;
+    }
+
+    &--contrast {
+      left: 137px;
+    }
+  }
+
+  &:active {
+    background: $basic-red;
+  }
 }
 
 .upload__buttons {
@@ -92,12 +292,16 @@
   flex-direction: column;
   padding: 38px 20px 43px;
 
+  @media (min-width: $tablet-width) {
+    padding: 30px 20px 53px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 44px;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 0 48px;
+    padding: 30px 0 30px;
   }
 }
 
@@ -115,9 +319,17 @@
   color: $basic-red;
   border: 3px solid $basic-red;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .upload__reset {
   color: rgba(40, 54, 69, 0.1);
   border: 3px solid rgba(40, 54, 69, 0.1);
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
+  }
 }
