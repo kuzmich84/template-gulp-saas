@@ -1,18 +1,16 @@
 .map {
   position: relative;
+  height: 200px;
   background-image: url("../img/map.jpg");
 
-  iframe {
-    width: 100%;
-    min-height: 200px;
+  @media (min-width: $tablet-width) {
+    min-height: 374px;
+    background-image: url("../img/map-tablet.jpg");
+  }
 
-    @media (min-width: $tablet-width) {
-      min-height: 374px;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-height: 502px;
-    }
+  @media (min-width: $desktop-width) {
+    min-height: 502px;
+    background-image: url("../img/map-desktop.jpg");
   }
 }
 
@@ -33,4 +31,10 @@
   @media (min-width: $desktop-width) {
     height: 103px;
   }
+}
+
+.map iframe {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
