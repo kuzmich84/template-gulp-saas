@@ -2,8 +2,29 @@
   background-color: $basic-extra-dark;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: top;
   padding-top: 30px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
+  }
 }
 
 .header__title {
@@ -37,7 +58,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding: 93px 130px 88px;
+    padding: 93px 111px 76px;
 
     br {
       display: none;
@@ -46,6 +67,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 35px;
+    padding: 93px 111px 87px;
 
     br {
       display: block;

@@ -3,18 +3,39 @@
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
+
   z-index: 1;
   padding-top: 23px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 110px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-image: url("../img/phone-tablet.png"), url("../img/back-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 545px, cover;
+    background-position: 50% bottom, 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-tablet@2x.png"), url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 130px;
+    background-image: url("../img/phone-desktop.png"), url("../img/back-desktop.jpg");
+    background-size: auto 645px, cover;
+    background-position: 95% bottom, 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-desktop@2x.png"), url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -53,7 +74,6 @@
 .intro__background {
   display: flex;
   justify-content: center;
-  background: url("../img/screen.jpg") center 33px no-repeat;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -61,15 +81,19 @@
 }
 
 .intro__wrapper-download {
-  margin: 0 auto;
+  //margin: 0 auto;
+  margin: -7px auto 0;
   padding: 28px 0 18px;
-  width: calc(100% - 40px);
+  background-color: $basic-extra-dark;
+  //width: calc(100% - 40px);
 
   @media (min-width: $tablet-width) {
     width: 50%;
     padding-top: 30px;
     margin: 0;
     padding-left: 20px;
+    padding-right: 10px;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +104,8 @@
 }
 
 .intro__button {
-  width: 100%;
+  //width: 100%;
+  width: calc(100% - 40px);
   color: $basic-white;
 
   @include font-settings(700, 18px, 18px);
@@ -112,7 +137,7 @@
 .intro__list {
   @include ul-reset;
   min-height: 56px;
-  margin: 33px 20px 20px 39px;
+  margin: 33px 20px 20px 20px;
   display: grid;
   grid-template-columns: repeat(3, 47px);
   column-gap: 31.5px;
@@ -121,7 +146,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    margin: 50px 20px 20px 5px;
+    margin: 50px 20px 20px 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,7 +187,7 @@
     min-width: 300px;
     margin: 0;
     margin-bottom: 95px;
-    padding-top: 14px;
+    padding-top: 10px;
 
     br {
       display: none;
@@ -171,5 +196,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 107px;
+    padding-top: 13px;
+    padding-right: 10px;
   }
 }

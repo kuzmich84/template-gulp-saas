@@ -1,3 +1,8 @@
+.form-container {
+  margin: 0 auto;
+  background-color: $basic-white;
+}
+
 .form {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -6,8 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 130px;
-    min-width: 940px;
+    width: 940px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 433px 433px;
@@ -395,7 +399,6 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    //margin: 1px 0 0;
     padding-top: 53px;
   }
 
@@ -481,7 +484,7 @@
 }
 
 .form__comment-container {
-  padding: 0 20px;
+  padding: 4px 20px 0;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 40px;

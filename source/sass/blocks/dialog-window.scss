@@ -43,6 +43,8 @@
 .dialog__content {
   margin: 25px 0 39px;
 
+  @include font-settings(400, 14px, 24px);
+
   @media (min-width: $tablet-width) {
     @include font-settings(400, 18px, 24px);
   }

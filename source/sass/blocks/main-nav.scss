@@ -29,6 +29,7 @@
     height: 110px;
     align-items: center;
     padding-right: 130px;
+    padding-left: 14px;
   }
 }
 
@@ -69,7 +70,7 @@
 
 .site-list__item--current > a {
   @media (min-width: $desktop-width) {
-    padding-bottom: 19px;
+    padding-bottom: 7px;
     border-bottom: 2px solid $basic-white;
   }
 }

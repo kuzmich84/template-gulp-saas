@@ -12,7 +12,7 @@
 }
 
 .research__wrapper {
-  width: 51%;
+  width: 52%;
   margin-left: auto;
   text-align: left;
   padding-top: 50px;
@@ -78,14 +78,15 @@
 }
 
 .research-timer {
-  padding: 54px 0 111px 20px;
+  padding: 64px 0 111px 20px;
   width: 100%;
   background-image: url("../img/research-timer.svg");
   background-repeat: no-repeat;
-  background-position: 20px 40px;
+  background-position: 20px 50px;
 
   @media (min-width: $desktop-width) {
-    background-position: 130px 120px;
+    background-image: url("../img/research-timer-tablet.svg");
+    background-position: 130px 85px;
     padding: 54px 0 111px 130px;
   }
 }
