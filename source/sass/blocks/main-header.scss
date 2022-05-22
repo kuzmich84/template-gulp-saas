@@ -24,6 +24,16 @@
   }
 }
 
+.main-header--nojs {
+  background-color: $basic-dark;
+  border-bottom: 1px solid $basic-black;
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: none;
+  }
+}
+
 .main-header--opened {
   background-color: $basic-dark;
   border-bottom: 1px solid $basic-black;

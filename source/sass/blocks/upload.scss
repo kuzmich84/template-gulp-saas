@@ -331,14 +331,35 @@
   border: 3px solid $basic-red;
   margin-bottom: 12px;
 
+  &:hover {
+    color: $basic-white;
+    background-color: $basic-red;
+  }
+
+  &:active {
+    border: 1px solid $basic-black;
+    color: rgba($basic-white, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
   }
 }
 
 .upload__reset {
-  color: rgba(40, 54, 69, 0.1);
-  border: 3px solid rgba(40, 54, 69, 0.1);
+  color: rgba($basic-dark, 0.1);
+  border: 3px solid rgba($basic-dark, 0.1);
+
+  &:hover {
+    color: rgba($basic-dark, 0.3);
+    border: 3px solid rgba($basic-dark, 0.3);
+  }
+
+  &:active {
+    background-color: rgba($basic-dark, 0.3);
+    color: rgba($basic-white, 0.3);
+    border: none;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 28px;

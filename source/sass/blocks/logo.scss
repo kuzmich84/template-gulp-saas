@@ -22,7 +22,7 @@
   }
 }
 
-.logo-glasses {
+.logo__glasses {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -34,7 +34,7 @@
   }
 }
 
-.main-footer__logo-glasses .logo-glasses {
+.main-footer__logo-glasses .logo__glasses {
   display: inline-block;
 
   @media (min-width: $desktop-width) {
@@ -42,7 +42,7 @@
   }
 }
 
-.logo-pink {
+.logo__pink {
   @media (min-width: $tablet-width) {
     margin-left: 11px;
     margin-top: 15px;
@@ -55,7 +55,7 @@
   }
 }
 
-.logo-image {
+.logo__image {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -74,7 +74,7 @@
   }
 }
 
-.logo-pink-star {
+.logo__pink-star {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -85,7 +85,7 @@
   }
 }
 
-.logo-pink-footer-star {
+.logo__pink-footer-star {
   display: none;
 
   @media (min-width: $desktop-width) {
