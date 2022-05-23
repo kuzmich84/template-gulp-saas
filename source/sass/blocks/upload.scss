@@ -59,7 +59,7 @@
 
   @include ul-reset;
   padding: 35px 0 34px;
-  border-bottom: 2px solid rgba(40, 54, 69, 0.1);
+  border-bottom: 2px solid rgba($basic-dark, 0.1);
 
   @media (min-width: $tablet-width) {
     flex-direction: column;

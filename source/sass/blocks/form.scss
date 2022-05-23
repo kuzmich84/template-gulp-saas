@@ -32,9 +32,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-top: 13px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 13px 0 0;
     height: 297px;
   }
 }
@@ -84,7 +82,7 @@
 
     @media (min-width: $tablet-width) {
       width: 100%;
-      margin-bottom: 56px;
+      margin-bottom: 53px;
     }
   }
 }
@@ -104,15 +102,14 @@
     padding-left: 40px;
 
     label {
-      margin-left: 16px;
-      margin-top: 10px;
-      margin-bottom: 32px;
+      margin: 10px 0 32px 20px;
     }
   }
 
   @media (min-width: $desktop-width) {
     label {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      margin-left: 16px;
     }
   }
 }
@@ -131,10 +128,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 31px;
-      padding-right: 31px;
-      padding-top: 0;
-      padding-bottom: 0;
+      padding: 0 31px;
     }
   }
 
@@ -143,12 +137,11 @@
     background-color: $basic-white;
     border: 2px solid $basic-grey;
     margin: 6px 20px 0;
-    //margin-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 39px 7px 0 60px;
+    padding: 39px 60px 11px 60px;
     margin: 34px 0 0;
   }
 }
@@ -189,8 +182,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 262px);
-    column-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 58px;
     margin-left: 0;
   }
 }
@@ -242,7 +235,7 @@
   display: flex;
   width: 37px;
   height: 37px;
-  margin-right: 22px;
+  margin-right: 20px;
   background-color: $basic-white;
   border: 2px solid $basic-grey;
   border-radius: 1px;
@@ -272,12 +265,12 @@
   @media (min-width: $tablet-width) {
     order: 3;
     background-color: $basic-white;
-    margin: 0 20px;
+    margin: 38px 20px 0;
     border: 2px solid $basic-grey;
-    margin-top: 35px;
 
     .form__slogan {
-      padding-bottom: 25px;
+      padding-bottom: 22px;
+      padding-top: 24px;
     }
 
     .form__user-contact-item {
@@ -294,10 +287,7 @@
     margin-top: 27px;
 
     .form__slogan {
-      padding-bottom: 3px;
-      padding-top: 0;
-      padding-left: 30px;
-      padding-right: 30px;
+      padding: 0 30px 3px;
     }
 
     .form__user-contact-item {
@@ -335,7 +325,7 @@
     content: "";
     width: 59px;
     height: calc(100% - 4px);
-    background-color: #e5e5e5;
+    background-color: $basic-grey;
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -372,7 +362,7 @@
     background-color: $basic-white;
     order: 2;
     border: 2px solid $basic-grey;
-    margin: 0 20px;
+    margin: 6px 20px 0;
 
     .form__slogan {
       padding: 0 25px;
@@ -381,7 +371,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin: 0;
+    margin: -6px 0 0;
   }
 }
 
@@ -404,12 +394,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 53px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 30px;
-    padding-bottom: 20px;
-    padding-top: 44px;
+    padding: 44px 20px 20px 30px;
   }
 }
 
@@ -475,7 +464,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
     width: 100%;
-    margin: 23px 0 0;
+    margin: 10px 0 0;
   }
 
   .slogan-comment {
@@ -547,8 +536,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 24px;
-    margin-bottom: 48px;
+    margin: 24px 0 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -557,10 +545,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 0;
+    padding: 0;
   }
 }
 
