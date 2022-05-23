@@ -76,10 +76,10 @@
   }
 
   &:active {
-    border-color: rgba(210, 40, 86, 0.3);
+    border-color: rgba($basic-red, 0.3);
 
     &::before {
-      border-color: rgba(210, 40, 86, 0.3);
+      border-color: rgba($basic-red, 0.3);
     }
   }
 }

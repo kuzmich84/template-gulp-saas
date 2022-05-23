@@ -9,7 +9,7 @@
   }
 
   &:active path {
-    fill: rgba(255, 255, 255, 0.3);
+    fill: rgba($basic-white, 0.3);
   }
 
   @media (min-width: $tablet-width) {
@@ -17,7 +17,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
     align-items: flex-end;
   }
 }
@@ -70,7 +69,7 @@
   }
 
   &:active path {
-    fill: rgba(255, 255, 255, 0.3);
+    fill: rgba($basic-white, 0.3);
   }
 }
 
