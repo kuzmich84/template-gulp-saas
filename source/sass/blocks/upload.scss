@@ -34,7 +34,8 @@
   @media (min-width: $desktop-width) {
     background-color: $basic-neutral;
     padding: 56px 20px 0 80px;
-    margin: 0 130px 25px;
+    width: 940px;
+    margin: 0 auto 25px;
   }
 }
 
@@ -339,6 +340,7 @@
   &:active {
     border: 1px solid $basic-black;
     color: rgba($basic-white, 0.3);
+    padding: 17px 0 18px;
   }
 
   @media (min-width: $tablet-width) {
@@ -359,6 +361,7 @@
     background-color: rgba($basic-dark, 0.3);
     color: rgba($basic-white, 0.3);
     border: none;
+    padding: 18px 0 19px;
   }
 
   @media (min-width: $desktop-width) {

@@ -47,22 +47,23 @@
 
 .header__content {
   margin: 76px 0 0;
-  padding: 43px 35px 50px;
+  padding: 43px 33px 50px;
 
   @include font-settings(400, 14px, 30px);
   background-color: $basic-white;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 18px;
     padding: 93px 111px 76px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 35px;
+    margin-bottom: -1px;
     padding: 93px 111px 87px;
 
     br {

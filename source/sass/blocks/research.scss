@@ -12,29 +12,41 @@
 }
 
 .research__wrapper {
-  width: 52%;
   margin-left: auto;
   text-align: left;
-  padding-top: 50px;
+  padding: 64px 0 111px 20px;
+  background-image: url("../img/research-timer.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 50px;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/research-timer-tablet.svg");
+    background-position: 0 80px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 130px;
-    width: 65.4%;
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 60px;
   }
 }
 
 .research__title {
   @include font-settings(700, 30px, 36px);
   color: $basic-black;
-  margin-bottom: 0;
+  width: 52%;
+  margin: 90px 0 0 auto;
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
-    padding-top: 100px;
+    padding-top: 90px;
+    width: 62%;
+    margin-left: auto;
+    margin-top: 23px;
 
     br {
       display: none;
@@ -45,14 +57,17 @@
 .research__content {
   font-weight: 400;
   color: $basic-dark;
-  margin-top: 10px;
-  margin-bottom: 8px;
   padding-right: 25px;
+  width: 52%;
+  margin: 10px 0 8px auto;
 
   @media (min-width: $desktop-width) {
     @include font-settings(400, 18px, 30px);
     margin-top: 23px;
     margin-bottom: 30px;
+    width: 62%;
+    margin-left: auto;
+    padding-right: 44px;
 
     br {
       display: none;
@@ -61,11 +76,16 @@
 }
 
 .research__link {
+  display: block;
   font-weight: 400;
   color: $basic-red;
+  width: 52%;
+  margin-left: auto;
 
   @media (min-width: $desktop-width) {
     @include font-settings(400, 18px, 30px);
+    width: 62%;
+    margin-left: auto;
   }
 
   &:hover {
@@ -74,19 +94,5 @@
 
   &:active {
     color: rgba($basic-dark, 0.3);
-  }
-}
-
-.research-timer {
-  padding: 64px 0 111px 20px;
-  width: 100%;
-  background-image: url("../img/research-timer.svg");
-  background-repeat: no-repeat;
-  background-position: 20px 50px;
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/research-timer-tablet.svg");
-    background-position: 130px 85px;
-    padding: 54px 0 111px 130px;
   }
 }

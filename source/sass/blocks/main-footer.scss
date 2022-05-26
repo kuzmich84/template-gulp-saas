@@ -12,9 +12,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 130px;
-    margin-top: 54px;
     align-items: flex-start;
+    width: 940px;
+    margin: 54px auto 0;
+    padding: 0;
   }
 }
 
@@ -44,12 +45,22 @@
   }
 }
 
+.main-footer__logo .logo {
+  padding-left: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
 .main-footer__logo-pink {
   position: relative;
   padding-left: 12px;
+  margin-left: 13px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
