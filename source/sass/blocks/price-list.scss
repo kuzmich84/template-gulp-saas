@@ -12,7 +12,14 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 145px;
-    padding-bottom: 95px;
+    padding-bottom: 25px;
+  }
+}
+
+.price-list__table-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
@@ -30,8 +37,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 130px;
-    width: calc(100% - 260px);
+    width: 940px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   tr {
@@ -57,7 +65,7 @@
       width: 25%;
       min-width: 152px;
       height: 78px;
-      padding-top: 16px;
+      padding-top: 13px;
     }
 
     @media (min-width: $desktop-width) {
@@ -65,6 +73,7 @@
       min-width: 233px;
       height: 97px;
       font-size: 18px;
+      padding-top: 18px;
     }
   }
 

@@ -8,10 +8,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 185px 130px 45px;
     background-image: url("../img/quotes.svg");
     background-repeat: no-repeat;
     background-position: center top 72px;
+    width: 940px;
+    padding: 185px 0 45px;
+    margin: 0 auto;
   }
 }
 

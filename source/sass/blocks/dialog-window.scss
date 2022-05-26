@@ -1,19 +1,29 @@
 .dialog-window {
   display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: 0 auto;
   min-width: 320px;
+  max-width: 780px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
+  transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
     min-width: 460px;
-    margin-left: 100px;
-    margin-right: 100px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 780px;
-    margin-left: 210px;
-    margin-right: 210px;
+  }
+  // Окно с ошибкой
+  &--failure-active {
+    display: block;
+  }
+  // Окно успешного ввода данных
+  &--success-active {
+    display: block;
   }
 }
 
@@ -22,11 +32,55 @@
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding: 49px 65px 54px;
+    padding: 78px 80px 54px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 49px 0 0;
+  }
+}
+
+.dialog-window--failure .dialog-window__button-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    background-color: $basic-neutral;
+  }
+}
+
+.dialog-window--success {
+  .dialog-window__wrapper {
+    padding: 37px 0 0;
+  }
+
+  .dialog-window__title {
+    @media (min-width: $tablet-width) {
+      padding: 50px 45px 0;
+    }
+  }
+
+  .dialog-window__content {
+    margin: 25px 17px 29px;
+
+    @media (min-width: $tablet-width) {
+      margin: 25px 65px 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 136px;
+    }
+  }
+
+  .dialog-window__button-wrapper {
+    width: 100%;
+    padding: 52px 20px;
+    background-color: $basic-neutral;
+
+    @media (min-width: $tablet-width) {
+      padding: 52px 82px;
+    }
   }
 }
 
@@ -38,6 +92,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-settings(700, 30px, 40px);
+    padding: 0 20px;
   }
 }
 
@@ -48,25 +103,13 @@
 
   @media (min-width: $tablet-width) {
     @include font-settings(400, 18px, 24px);
+    margin: 20px 0 35px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 201px;
+    margin: 20px 0 58px;
   }
-}
-
-.form__action--error {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    padding-top: 52px;
-    padding-bottom: 52px;
-    background-color: $basic-neutral;
-  }
-}
-
-.form__action--success {
-  background-color: $basic-neutral;
 }
 
 .dialog-window__button {
@@ -82,6 +125,17 @@
   margin-top: 2px;
 
   @media (min-width: $tablet-width) {
-    margin: 40px auto 54px;
+    min-width: 296px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 296px;
+  }
+}
+
+.dialog-window--success .dialog-window__button {
+  @media (min-width: $desktop-width) {
+    width: 456px;
   }
 }

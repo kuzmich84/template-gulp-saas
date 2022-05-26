@@ -70,14 +70,23 @@
 
     &::placeholder {
       color: $basic-dark;
+      opacity: 1;
     }
 
     &:hover {
       border-color: $basic-dark;
     }
 
-    &:active {
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus {
       border-color: $basic-red;
+    }
+
+    &:focus::placeholder {
+      font-size: 0;
     }
 
     @media (min-width: $tablet-width) {
@@ -125,10 +134,12 @@
 
     @media (min-width: $tablet-width) {
       padding: 49px 51px 44px;
+      margin: 0 auto;
     }
 
     @media (min-width: $desktop-width) {
       padding: 0 31px;
+      margin: 0 auto;
     }
   }
 
@@ -271,6 +282,7 @@
     .form__slogan {
       padding-bottom: 22px;
       padding-top: 24px;
+      margin: 0 auto;
     }
 
     .form__user-contact-item {
@@ -288,6 +300,7 @@
 
     .form__slogan {
       padding: 0 30px 3px;
+      margin: 0 auto;
     }
 
     .form__user-contact-item {
@@ -366,6 +379,7 @@
 
     .form__slogan {
       padding: 0 25px;
+      margin: 0 auto;
     }
   }
 
@@ -473,6 +487,7 @@
 
     @media (min-width: $tablet-width) {
       padding: 20px 35px 17px;
+      margin: 0 auto;
     }
   }
 }
@@ -499,6 +514,7 @@
   border-radius: 1px;
 
   @include font-settings(400, 18px, 30px);
+  color: $basic-dark;
   text-align: left;
   overflow: hidden;
   cursor: pointer;
@@ -523,6 +539,14 @@
   }
 
   &:active {
+    border-color: $basic-red;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
     border-color: $basic-red;
   }
 }
@@ -583,6 +607,7 @@
   &:disabled {
     cursor: not-allowed;
     background-color: $basic-grey;
+    border-color: $basic-grey;
   }
 }
 
